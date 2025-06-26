@@ -223,7 +223,6 @@ function CheckInScreen() {
                         marginBottom: 15,
                         height: 60,
                         backgroundColor: 'rgba(255,255,255, 0.75)',
-                        color:'red'
                     }}
                 />
 
