@@ -1,0 +1,20 @@
+<svg width="65" height="66" viewBox="0 0 65 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32.9345" cy="32.804" r="19.0204" fill="#E99F14"/>
+<circle cx="32.9345" cy="32.804" r="19.5204" stroke="white" stroke-opacity="0.8"/>
+<rect x="30.7798" y="1.41565" width="3.18569" height="7.12095" rx="1.59284" fill="#E99F14"/>
+<rect x="30.2798" y="0.915649" width="4.18569" height="8.12095" rx="2.09284" stroke="white" stroke-opacity="0.8"/>
+<rect x="63.8809" y="31.0913" width="3.18569" height="7.12095" rx="1.59284" transform="rotate(90 63.8809 31.0913)" fill="#E99F14"/>
+<rect x="64.3809" y="30.5913" width="4.18569" height="8.12095" rx="2.09284" transform="rotate(90 64.3809 30.5913)" stroke="white" stroke-opacity="0.8"/>
+<rect x="53.4761" y="9.39795" width="3.18569" height="7.12095" rx="1.59284" transform="rotate(45 53.4761 9.39795)" fill="#E99F14"/>
+<rect x="53.4761" y="8.69084" width="4.18569" height="8.12095" rx="2.09284" transform="rotate(45 53.4761 8.69084)" stroke="white" stroke-opacity="0.8"/>
+<rect x="55.8984" y="53.788" width="3.18569" height="7.12095" rx="1.59284" transform="rotate(135 55.8984 53.788)" fill="#E99F14"/>
+<rect x="56.6055" y="53.788" width="4.18569" height="8.12095" rx="2.09284" transform="rotate(135 56.6055 53.788)" stroke="white" stroke-opacity="0.8"/>
+<rect x="34.2051" y="64.1925" width="3.18569" height="7.12095" rx="1.59284" transform="rotate(-180 34.2051 64.1925)" fill="#E99F14"/>
+<rect x="34.7051" y="64.6925" width="4.18569" height="8.12095" rx="2.09284" transform="rotate(-180 34.7051 64.6925)" stroke="white" stroke-opacity="0.8"/>
+<rect x="1.104" y="34.5167" width="3.18569" height="7.12095" rx="1.59284" transform="rotate(-90 1.104 34.5167)" fill="#E99F14"/>
+<rect x="0.604004" y="35.0167" width="4.18569" height="8.12095" rx="2.09284" transform="rotate(-90 0.604004 35.0167)" stroke="white" stroke-opacity="0.8"/>
+<rect x="11.5088" y="56.2101" width="3.18569" height="7.12095" rx="1.59284" transform="rotate(-135 11.5088 56.2101)" fill="#E99F14"/>
+<rect x="11.5088" y="56.9172" width="4.18569" height="8.12095" rx="2.09284" transform="rotate(-135 11.5088 56.9172)" stroke="white" stroke-opacity="0.8"/>
+<rect x="9.08643" y="11.8202" width="3.18569" height="7.12095" rx="1.59284" transform="rotate(-45 9.08643 11.8202)" fill="#E99F14"/>
+<rect x="8.37932" y="11.8202" width="4.18569" height="8.12095" rx="2.09284" transform="rotate(-45 8.37932 11.8202)" stroke="white" stroke-opacity="0.8"/>
+</svg>
