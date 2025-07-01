@@ -28,7 +28,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>vegruncheckin</string>
-          <string>com.qatech.vegrun</string>
+          <string>com.qatech.testrun</string>
         </array>
       </dict>
       <dict>

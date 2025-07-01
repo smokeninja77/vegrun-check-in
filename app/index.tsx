@@ -23,8 +23,9 @@ import MyLoadingView from "@/components/MyLoadingView";
 import LottieView from "lottie-react-native";
 import {ImageStyle} from "expo-image";
 import {useSafeAreaInsets} from "react-native-safe-area-context";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 
-const SHEET_URL = 'https://sheet.best/api/sheets/7a554dfc-95ef-466a-b93c-d1a4b9bdef34';
+const SHEET_URL = 'https://api.sheetbest.com/sheets/05cd8009-5a94-45b9-aaef-bcb1908338f1';
 
 const fetchAllSheetData = async () => {
     const res = await axios.get(SHEET_URL);
@@ -33,7 +34,7 @@ const fetchAllSheetData = async () => {
 
 const patchCheckIn = async (id: string) => {
     const res = await axios.patch(`${SHEET_URL}/search?Id=${encodeURIComponent(id)}`, {
-        'Check in': 'Yes',
+        'Check in': 'Checked In',
     });
     return res.data;
 };
@@ -53,16 +54,27 @@ export default function App() {
 
 function CheckInScreen() {
     const queryClient = useQueryClient();
-    const [searchBy, setSearchBy] = useState<'英文姓名 English Name' | '中文姓名 Chinese Name' | '手機號碼 Mobile Number' | '身份证号码 New IC No'>('手機號碼 Mobile Number');
+    const [searchBy, setSearchBy] = useState<'英文姓名 English Name' | '中文姓名 Chinese Name' | '手機號碼 Mobile Number'>('手機號碼 Mobile Number');
     const [searchValue, setSearchValue] = useState('');
     const [allData, setAllData] = useState<any[]>([]);
     const [resultData, setResultData] = useState<any[]>([]);
     const [isMutating, setIsMutating] = useState(false);
+    const [flag, setFlag] = useState(true)
+
+    const [totalCheckIn, setTotalCheckIn] = useState<any>()
 
     const { data, isLoading, refetch, isFetching } = useQuery({
         queryKey: ['all'],
         queryFn: fetchAllSheetData,
     });
+
+    useEffect(() => {
+        console.log('resultData', resultData)
+        if (data) {
+            console.log('data', data)
+            setTotalCheckIn(data?.filter(item => item["Check in"] === 'Checked In').length)
+        }
+    }, [data]);
 
     useEffect(() => {
         if (data) {
@@ -85,27 +97,26 @@ function CheckInScreen() {
                 return cleanedField.includes(cleanedInput);
             }
 
-            if (searchBy === '身份证号码 New IC No'){
-                const cleanedInput = searchValue.replace(/\D/g, '');
-                const cleanedField = fieldValue.replace(/\D/g, '');
-                return cleanedField.includes(cleanedInput);
-            }
 
             return fieldValue.toLowerCase().includes(searchValue.toLowerCase());
         });
 
         setResultData(filtered);
-    }, [searchValue, searchBy, allData]);
+    }, [searchValue, searchBy, allData, flag]);
 
     const mutation = useMutation({
         mutationFn: patchCheckIn,
         onMutate: () => setIsMutating(true),
-        onSettled: () => setIsMutating(false),
-        onSuccess: () => {
+        onSettled: async () => {
+            setIsMutating(false);
+            await refetch()
+            setFlag((prevState)=> !prevState)
+        },
+        onSuccess: async () => {
+            // await refetch()
             Alert.alert('Check-in success');
-            queryClient.invalidateQueries({ queryKey: ['all'] });
             setResultData([]);
-            setSearchValue('');
+            // setSearchValue('');
         },
     });
 
@@ -149,7 +160,7 @@ function CheckInScreen() {
             <View
                 style={{
                     padding: 15,
-                    backgroundColor: item['Check in'] === 'Yes' ? '#d4f4dd' : '#F4D4D5',
+                    backgroundColor: item['Check in'] === 'Checked In' ? '#d4f4dd' : '#F4D4D5',
                     borderWidth: 1,
                     borderColor: '#ddd',
                     borderRadius: 6,
@@ -160,13 +171,12 @@ function CheckInScreen() {
                 <Text style={{ fontWeight: 'bold' }}>
                     {item['中文姓名 Chinese Name']} {item['英文姓名 English Name']}
                 </Text>
-                <Text>IC: {item['身份证号码 New IC No'] ? item['身份证号码 New IC No'] : 'NA' }</Text>
                 <Text>Mobile No.: {item['手機號碼 Mobile Number']}</Text>
                 <Text>Category: {item['身分別'] ? item['身分別'] : 'NA'}</Text>
-                <Text>Status: {item['Check in'] || 'Not Checked'}</Text>
+                <Text>Status: {item['Check in'] || 'Not Checked In'}</Text>
             </View>
 
-            {item['Check in'] !== 'Yes' && (
+            {item['Check in'] !== 'Checked In' && (
                 <TouchableOpacity
                     style={[styles.button, styles.checkedIn]}
                     onPress={() => {
@@ -198,7 +208,6 @@ function CheckInScreen() {
                         <RadioButton label="手機號碼 Mobile Number" />
                         <RadioButton label="英文姓名 English Name" />
                         <RadioButton label="中文姓名 Chinese Name" />
-                        <RadioButton label={"身份证号码 New IC No"} />
                     </View>
 
                         <Image source={require('@/assets/images/carrot.png')} style={{
@@ -210,6 +219,7 @@ function CheckInScreen() {
                 </View>
 
                 {/* 🔍 Input */}
+                <View>
                 <TextInput
                     placeholder={searchBy}
                     placeholderTextColor="#888"
@@ -225,6 +235,10 @@ function CheckInScreen() {
                         backgroundColor: 'rgba(255,255,255, 0.75)',
                     }}
                 />
+                    <TouchableOpacity style={{position: 'absolute', right: 0 , top: 0, width: 55, height: 60}} onPress={()=> { setSearchValue('') }}>
+                        <MaterialIcons style={{right: -15, top: 18}} name="delete" size={26} color="#373737" />
+                    </TouchableOpacity>
+                </View>
 
                 <TouchableOpacity
                     onPress={() => refetch()}
@@ -239,6 +253,12 @@ function CheckInScreen() {
                         🔄 Refresh 更新
                     </Text>
                 </TouchableOpacity>
+
+
+                <Text style={{marginBottom: 3}}>出席率: {Math.floor((totalCheckIn / data?.length) * 100)}%</Text>
+                <Text style={{marginBottom: 12}}>参加人数: {totalCheckIn} / {data?.length}</Text>
+
+
 
                 {/* 🔘 Search Button */}
                 {/*<TouchableOpacity*/}

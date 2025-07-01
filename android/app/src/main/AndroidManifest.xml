@@ -27,7 +27,6 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="vegruncheckin"/>
-        <data android:scheme="exp+vegrunsentul"/>
         <data android:scheme="exp+vegrun-check-in"/>
       </intent-filter>
     </activity>

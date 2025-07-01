@@ -12,12 +12,12 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     newArchEnabled: true,
     ios: {
         supportsTablet: true,
-        bundleIdentifier: 'com.qatech.vegrun',
+        bundleIdentifier: 'com.qatech.testrun',
         icon: "./assets/app-images/ios-app-icon.png",
     },
     android: {
         edgeToEdgeEnabled: true,
-        package: 'com.qatech.vegrun',
+        package: 'com.qatech.testrun',
         adaptiveIcon: {
             foregroundImage: "./assets/app-images/android-app-icon.png",
             monochromeImage: "./assets/app-images/android-app-icon.png",

@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		3748E11906139D8159E65F4B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A4674DEF52DB8C06636FC68E /* PrivacyInfo.xcprivacy */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		4A3B22E4FF93461BF2FAA10C /* libPods-VegrunSentul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CEE8EB9C0E9B35E9264525F /* libPods-VegrunSentul.a */; };
-		526DB753C7E1387FE7662A23 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1F224FF2837F6CB30ADE7DB6 /* PrivacyInfo.xcprivacy */; };
-		AFD3F4A5490C92F143ED7DDF /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E516351142ED02E957AE7D7 /* ExpoModulesProvider.swift */; };
+		42B6CD9B49747B7D56839C44 /* libPods-VegrunSentul.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1063B7002A5DF682B72BC2 /* libPods-VegrunSentul.a */; };
+		B38BC04FD8C23F00AAE3C9DC /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646A571D382F167436D8733A /* ExpoModulesProvider.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -20,13 +20,13 @@
 		13B07F961A680F5B00A75B9A /* VegrunSentul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VegrunSentul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = VegrunSentul/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = VegrunSentul/Info.plist; sourceTree = "<group>"; };
-		1F224FF2837F6CB30ADE7DB6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = VegrunSentul/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		4E516351142ED02E957AE7D7 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-VegrunSentul/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		8CEE8EB9C0E9B35E9264525F /* libPods-VegrunSentul.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VegrunSentul.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1063B7002A5DF682B72BC2 /* libPods-VegrunSentul.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VegrunSentul.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		646A571D382F167436D8733A /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-VegrunSentul/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		8073D34862D40B662701077B /* Pods-VegrunSentul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegrunSentul.debug.xcconfig"; path = "Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul.debug.xcconfig"; sourceTree = "<group>"; };
+		A4674DEF52DB8C06636FC68E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = VegrunSentul/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = VegrunSentul/SplashScreen.storyboard; sourceTree = "<group>"; };
+		ABAB2740BD54CCFF892A6442 /* Pods-VegrunSentul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegrunSentul.release.xcconfig"; path = "Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul.release.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		C3CCEC22DDCE1F728A452CEA /* Pods-VegrunSentul.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegrunSentul.debug.xcconfig"; path = "Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul.debug.xcconfig"; sourceTree = "<group>"; };
-		EB31C99551E5EB4BF0CE0D8C /* Pods-VegrunSentul.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VegrunSentul.release.xcconfig"; path = "Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = VegrunSentul/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* VegrunSentul-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "VegrunSentul-Bridging-Header.h"; path = "VegrunSentul/VegrunSentul-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -37,13 +37,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A3B22E4FF93461BF2FAA10C /* libPods-VegrunSentul.a in Frameworks */,
+				42B6CD9B49747B7D56839C44 /* libPods-VegrunSentul.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091FC3007933BF8417FBCD1D /* VegrunSentul */ = {
+			isa = PBXGroup;
+			children = (
+				646A571D382F167436D8733A /* ExpoModulesProvider.swift */,
+			);
+			name = VegrunSentul;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* VegrunSentul */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +61,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				1F224FF2837F6CB30ADE7DB6 /* PrivacyInfo.xcprivacy */,
+				A4674DEF52DB8C06636FC68E /* PrivacyInfo.xcprivacy */,
 			);
 			name = VegrunSentul;
 			sourceTree = "<group>";
@@ -62,17 +70,18 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				8CEE8EB9C0E9B35E9264525F /* libPods-VegrunSentul.a */,
+				3D1063B7002A5DF682B72BC2 /* libPods-VegrunSentul.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5E11CCE7EF0F1EE46B173788 /* Pods */ = {
+		4D9D439F1593BCB88C58D5F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C3CCEC22DDCE1F728A452CEA /* Pods-VegrunSentul.debug.xcconfig */,
-				EB31C99551E5EB4BF0CE0D8C /* Pods-VegrunSentul.release.xcconfig */,
+				8073D34862D40B662701077B /* Pods-VegrunSentul.debug.xcconfig */,
+				ABAB2740BD54CCFF892A6442 /* Pods-VegrunSentul.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,14 +92,6 @@
 			name = Libraries;
 			sourceTree = "<group>";
 		};
-		83A59689BB540B2FF7AA00AC /* VegrunSentul */ = {
-			isa = PBXGroup;
-			children = (
-				4E516351142ED02E957AE7D7 /* ExpoModulesProvider.swift */,
-			);
-			name = VegrunSentul;
-			sourceTree = "<group>";
-		};
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +99,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				5E11CCE7EF0F1EE46B173788 /* Pods */,
-				D77FFCA67FE055A540588EE7 /* ExpoModulesProviders */,
+				4D9D439F1593BCB88C58D5F7 /* Pods */,
+				AB68A84AD42FDE642DEB852A /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -114,6 +115,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		AB68A84AD42FDE642DEB852A /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				091FC3007933BF8417FBCD1D /* VegrunSentul */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,14 +130,6 @@
 			);
 			name = Supporting;
 			path = VegrunSentul/Supporting;
-			sourceTree = "<group>";
-		};
-		D77FFCA67FE055A540588EE7 /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				83A59689BB540B2FF7AA00AC /* VegrunSentul */,
-			);
-			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "VegrunSentul" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				9387B0B52604ABA1C3511AAF /* [Expo] Configure project */,
+				6736FF8B68366AB45D90BB5C /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				816659E78BD75A487AE75AC4 /* [CP] Embed Pods Frameworks */,
+				03082BA0794553A860D3A3D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				526DB753C7E1387FE7662A23 /* PrivacyInfo.xcprivacy in Resources */,
+				3748E11906139D8159E65F4B /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +217,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		03082BA0794553A860D3A3D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -238,6 +257,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6736FF8B68366AB45D90BB5C /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-VegrunSentul/expo-configure-project.sh\"\n";
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -283,43 +321,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		816659E78BD75A487AE75AC4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VegrunSentul/Pods-VegrunSentul-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9387B0B52604ABA1C3511AAF /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-VegrunSentul/expo-configure-project.sh\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -328,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				AFD3F4A5490C92F143ED7DDF /* ExpoModulesProvider.swift in Sources */,
+				B38BC04FD8C23F00AAE3C9DC /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,15 +338,12 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3CCEC22DDCE1F728A452CEA /* Pods-VegrunSentul.debug.xcconfig */;
+			baseConfigurationReference = 8073D34862D40B662701077B /* Pods-VegrunSentul.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = VegrunSentul/VegrunSentul.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7SCW9PVTD4;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -364,9 +362,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qatech.vegrun;
-				PRODUCT_NAME = "VegrunSentul";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qatech.testrun;
+				PRODUCT_NAME = VegrunSentul;
 				SWIFT_OBJC_BRIDGING_HEADER = "VegrunSentul/VegrunSentul-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -377,15 +374,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB31C99551E5EB4BF0CE0D8C /* Pods-VegrunSentul.release.xcconfig */;
+			baseConfigurationReference = ABAB2740BD54CCFF892A6442 /* Pods-VegrunSentul.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = VegrunSentul/VegrunSentul.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7SCW9PVTD4;
 				INFOPLIST_FILE = VegrunSentul/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -399,9 +393,8 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qatech.vegrun;
-				PRODUCT_NAME = "VegrunSentul";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qatech.testrun;
+				PRODUCT_NAME = VegrunSentul;
 				SWIFT_OBJC_BRIDGING_HEADER = "VegrunSentul/VegrunSentul-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,7 +457,10 @@
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -519,7 +515,10 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

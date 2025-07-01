@@ -87,9 +87,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.qatech.vegrun'
+    namespace 'com.qatech.testrun'
     defaultConfig {
-        applicationId 'com.qatech.vegrun'
+        applicationId 'com.qatech.testrun'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
