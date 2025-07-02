@@ -24,6 +24,7 @@ import LottieView from "lottie-react-native";
 import {ImageStyle} from "expo-image";
 import {useSafeAreaInsets} from "react-native-safe-area-context";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { AnimatedCircularProgress } from 'react-native-circular-progress';
 
 const SHEET_URL = 'https://api.sheetbest.com/sheets/05cd8009-5a94-45b9-aaef-bcb1908338f1';
 
@@ -122,7 +123,7 @@ function CheckInScreen() {
 
     const RadioButton = ({ label }: { label: typeof searchBy }) => (
         <Pressable
-            style={{ flexDirection: 'row', alignItems: 'center', marginRight: 20, marginBottom: 10 }}
+            style={{ flexDirection: 'row', alignItems: 'center', marginRight: 20, marginBottom: 8 }}
             onPress={() => {
                 setSearchValue('');
                 setSearchBy(label);
@@ -151,7 +152,7 @@ function CheckInScreen() {
                     />
                 )}
             </View>
-            <Text>{label}</Text>
+            <Text style={{color: '#292828'}}>{label}</Text>
         </Pressable>
     );
 
@@ -201,20 +202,41 @@ function CheckInScreen() {
                 position: 'absolute',
                 opacity: 0.2,
             }} />
-            <View style={{ padding: 20, flex: 1, backgroundColor: 'transparent' }}>
+            <View style={{ padding: 20, backgroundColor: 'transparent' }}>
                 {/* 🔘 Radio */}
-                <View style={{flexDirection: 'row', marginBottom: 15}}>
+                <View style={{flexDirection: 'row', marginBottom: 15, backgroundColor: 'transparent', justifyContent: 'center', alignItems: 'center'}}>
                     <View style={{ marginBottom: 15, flexWrap: 'wrap'}}>
                         <RadioButton label="手機號碼 Mobile Number" />
                         <RadioButton label="英文姓名 English Name" />
                         <RadioButton label="中文姓名 Chinese Name" />
                     </View>
 
-                        <Image source={require('@/assets/images/carrot.png')} style={{
-                            // width: 50,
-                            height: '100%',
-                            flex: 1
-                        } as ImageStyle} />
+
+                    <View style={{alignItems: 'center', justifyContent: 'center', backgroundColor: 'transparent',  flex: 1,}}>
+                        <View style={{alignItems: 'center', justifyContent: 'center', marginRight: 15}}>
+                        <AnimatedCircularProgress
+                            size={100}
+                            width={5}
+                            fill={Math.floor((totalCheckIn / data?.length) * 100)}
+                            tintColor="orange"
+                            backgroundColor="#9D9D9D"
+                            rotation={0}
+                        />
+
+                        <View style={{justifyContent: 'center', alignItems: 'center', position: 'absolute', backgroundColor: 'transparent'}}>
+
+                            <Text style={{marginBottom: 0, fontSize: 30, color: '#FF9800', fontWeight: 'semi'}}>{totalCheckIn}</Text>
+                            <Text style={{marginBottom: 0, color: '#292828', fontSize: 14}}>已签到</Text>
+
+                        </View>
+                        </View>
+
+                        <View style={{position: 'absolute', bottom: 0, right: 0}}>
+                            <Text style={{marginTop: 5, fontStyle: 'italic', fontWeight: 500}}>{((totalCheckIn / data?.length) * 100).toFixed(1)}%</Text>
+                        </View>
+
+                    </View>
+
 
                 </View>
 
@@ -255,8 +277,7 @@ function CheckInScreen() {
                 </TouchableOpacity>
 
 
-                <Text style={{marginBottom: 3}}>出席率: {Math.floor((totalCheckIn / data?.length) * 100)}%</Text>
-                <Text style={{marginBottom: 12}}>参加人数: {totalCheckIn} / {data?.length}</Text>
+                <Text style={{marginBottom: 12}}>总人数: {data?.length}</Text>
 
 
 
