@@ -8,7 +8,9 @@ import {
     Pressable,
     StyleSheet,
     Alert,
-    Image, Dimensions
+    Image, Dimensions,
+    KeyboardAvoidingView
+
 } from 'react-native';
 import axios from 'axios';
 import {
@@ -314,6 +316,7 @@ function CheckInScreen() {
                         data={resultData}
                         keyExtractor={(item, index) => index.toString()}
                         renderItem={renderItem}
+                        contentContainerStyle={{ paddingBottom: 300 }}
                     />
                     </>
                 )}
