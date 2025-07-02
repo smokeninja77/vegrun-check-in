@@ -247,6 +247,7 @@ function CheckInScreen() {
                     placeholderTextColor="#888"
                     value={searchValue}
                     onChangeText={setSearchValue}
+                    keyboardType={searchBy === '手機號碼 Mobile Number' ? 'numeric' : 'default'}
                     style={{
                         borderWidth: 1,
                         borderColor: '#ccc',
